@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 
-const char *ssid = "RimadStudio_Wifi";
-const char *pass = "b1321";
+const char *ssid = "[SSID]";
+const char *pass = "[PASS]";
 
 WiFiClient client;
 
