@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			var x;
+			function check(){
+				x = document.getElementById("slider1").value;
+				document.getElementById("demo").innerHTML = x;
+				
+			}
+			function enter(){
+				document.getElementById("myForm").action = "http://192.168.1.38/data=" + x;
+				document.getElementById("myForm").submit();
+			}
+		</script>
+	</head>
+	<body>
+	<center>
+		<input id="slider1" type="range" min="0" max="180" step="18"/>
+		
+		<form id="myForm" method="post">
+    		<input type="button" name="btn" value="Check" onclick="check()">
+    		<input type="button" name="btn" value="Enter" onclick="enter()">
+		</form>
+
+		<p id= "demo">0</p>
+	</center>
+	</body>
+</html>
